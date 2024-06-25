@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: #FFFAFA;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+/** Nav & Header text */
+nav{
+    color: #000;    
+}
+
+header{
+    background: #FAE3E3;
+}
+
+#logo {
+    font-family: "Kaushan Script", cursive;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #000;
+    font-weight: 400;
+}
+
+.logo-img{
+    padding-right: 10px;
+}
+
+.header-two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.big-text{
+    font-size: 4.7rem;
+    margin: 1rem 0rem;
+}
+
+span{
+    color: #DA2F2F;
+}
+
+.small-text{
+    font-size: 1.6rem;
+    margin: 1rem 0rem;
+}
+
+/** Form*/
+.search-form{
+    padding: 2rem;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.search-form input {
+    width: 32rem;
+    padding: 0.3rem 1rem;
+    font-size: 1.4rem;
+    outline: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: rgb(231, 231, 231);
+    border: none;
+}
+
+.search-form button{
+    padding: 1.4rem 1.5rem;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: #DA2F2F;
+    transition: all ease-in-out 0.3s;
+}
+
+.search-form button:hover{
+    background: rgb(231, 231, 231);
+    color: #DA2F2F;
+}
+
+/** More Button */
+.nav-button{
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.more-btn {
+    padding: 0.7rem 1.6rem;
+    font-size: 1.4rem;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    background-color: #DA2F2F;
+    border-radius: 20px;
+    transition: all ease-in-out 0.3s;
+}
+
+.more-btn:hover{
+    background-color: #fff;
+    color: #DA2F2F;
+    border: 2px solid #DA2F2F;
+}
+
+/** Main */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: 2rem 0rem;
+    width: 80%;
+    margin: auto;
+    row-gap: 5rem;
+    column-gap: 3rem;
+    position: relative;
+}
+
+.gallery-img{
+    position: relative;
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.dark-bg{
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+}
+
+.gallery-img:hover img {
+    opacity: 0.5;
+}
+  
+.gallery-img:hover .dark-bg {
+    opacity: 1;
+}
+
+.info{
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.info p{
+    padding: 0rem 0.7rem;
+}
+
+.info:hover{
+   font-weight: 600;
+}
+
+
+/* .gallery-info{
+    display: flex;
+    color: grey;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery-info a {
+    color: gray;
+    font-size: 1.5rem;
+}
+
+.gallery-info a:hover{
+    color: black;
+}
+
+.gallery-info p{
+    font-size: 1.2rem;
+    font-weight: 500; */
+
