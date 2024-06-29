@@ -185,6 +185,9 @@ span{
 
 /** Responsive View */
 @media(max-width: 960px){
+    .gallery{
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))
+    }
     .search-form input{
         width: 18rem;
     }
@@ -208,17 +211,43 @@ span{
     }
 
     .gallery {
-        margin-left: 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
     
 }
 
 @media screen and (max-width: 322px){
+
+    body{
+        overflow-x: hidden;
+    }
+
     .search-form input{
-        width: 14rem;
+        width: 11rem;
     }
 
     .big-text{
         font-size: 3.6rem;
     }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+    .search-form button{
+        font-size: 1rem;
+        padding: 1rem 1.1rem;
+    }
+
+    .big-text{
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .small-text{
+        font-size: 1.3rem;
+        text-align: center;
+    }
 }
+
+
